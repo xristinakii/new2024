@@ -1,1 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds Store</title>
+    <style>
+        /* CSS styles */
+
+    /* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-image: url("https://i.postimg.cc/C548DM8m/gold-texture.jpg");
+    background-size: cover;
+}
+
+header {
+   background-color: #9a2df5a6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-item {
+    flex: 1 1 250px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+}
+
+.modal-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        flex-basis: 80%;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <h1>Backgrounds Store</h1>
+        <h1>Click to enlarge image</h1>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            
+            <h2>Inner Section</h2>
+            <div class="image-item" onclick="openModal('https://i.postimg.cc/BZNMWdbv/image.png')">
+                <img src="https://i.postimg.cc/BZNMWdbv/image.png" alt="Inner Image 1">
+                <h3>Inner 1 </h3>
+                <p>Price: 400 xats</p>
+            </div>
+
+            <div class="image-item" onclick="openModal('https://i.postimg.cc/ZYg5MwCD/52.png')">
+                <img src="https://i.postimg.cc/ZYg5MwCD/52.png" alt="Inner Image 2">
+                <h3>Inner 2 </h3>
+                <p>Price: 400 xats</p>
+            </div>
+            
+                <div class="image-item" onclick="openModal('https://i.postimg.cc/J7Kh51Lm/51.png')">
+                <img src="https://i.postimg.cc/J7Kh51Lm/51.png" alt="Inner Image 2">
+                <h3>Inner 3 </h3>
+                <p>Price: 400 xats</p>
+                </div>
+
+            
+              <div class="image-item" onclick="openModal('https://i.postimg.cc/FsJxJCMy/50chat.png')">
+                <img src="https://i.postimg.cc/FsJxJCMy/50chat.png" alt="Inner Image 2">
+                <h3>Inner 4 </h3>
+                <p>Price: 400 xats</p>
+                </div>
+
+
+
+              <div class="image-item" onclick="openModal('https://i.postimg.cc/cC3862v6/47.png')">
+                <img src="https://i.postimg.cc/cC3862v6/47.png" alt="Inner Image 2">
+                <h3>Inner  5</h3>
+                <p>Price: 400 xats</p>
+                </div>
+
+
+              <div class="image-item" onclick="openModal('https://i.postimg.cc/ydzLqcz0/49.png')">
+                <img src="https://i.postimg.cc/ydzLqcz0/49.png" alt="Inner Image 2">
+                <h3>Inner 6 </h3>
+                <p>Price: 400 xats</p>
+                </div>
+
+
+              <div class="image-item" onclick="openModal('https://i.postimg.cc/dtDpjRQ0/43.png')">
+                <img src="https://i.postimg.cc/dtDpjRQ0/43.png" alt="Inner Image 2">
+                <h3>Inner 7 </h3>
+                <p>Price: 400 xats</p>
+                </div>
+
+
+              <div class="image-item" onclick="openModal('https://i.postimg.cc/hj0KMqfH/4.png')">
+                <img src="https://i.postimg.cc/hj0KMqfH/4.png" alt="Inner Image 2">
+                <h3>Inner 8 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/SNqGBYv5/monika-chat.png')">
+                <img src="https://i.postimg.cc/SNqGBYv5/monika-chat.png" alt="Inner Image 2">
+                <h3>Inner 9 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+        <div class="image-item" onclick="openModal('https://i.postimg.cc/nLt7DyfW/tsat-abadromes.png')">
+                <img src="https://i.postimg.cc/nLt7DyfW/tsat-abadromes.png" alt="Inner Image 2">
+                <h3>Inner 10 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/Hs80f4YT/image.png')">
+                <img src="https://i.postimg.cc/Hs80f4YT/image.png" alt="Inner Image 2">
+                <h3>Inner 11 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/8PF3t0j4/MF.png')">
+                <img src="https://i.postimg.cc/8PF3t0j4/MF.png" alt="Inner Image 2">
+                <h3>Inner 12 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/XJR2hVZg/Z1-Background-MIC.png')">
+                <img src="https://i.postimg.cc/XJR2hVZg/Z1-Background-MIC.png" alt="Inner Image 2">
+                <h3>Inner 13 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Y9L7YCKN/D-P-P2.png')">
+                <img src="https://i.postimg.cc/Y9L7YCKN/D-P-P2.png" alt="Inner Image 2">
+                <h3>Inner 14 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/KYf6JkLP/Dsp-Mov.png')">
+                <img src="https://i.postimg.cc/KYf6JkLP/Dsp-Mov.png" alt="Inner Image 2">
+                <h3>Inner 15 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Zqk22F1N/DSP1-Pc-Back.png')">
+                <img src="https://i.postimg.cc/Zqk22F1N/DSP1-Pc-Back.png" alt="Inner Image 2">
+                <h3>Inner 16 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/VL9FmxZD/dsp4.png')">
+                <img src="https://i.postimg.cc/VL9FmxZD/dsp4.png" alt="Inner Image 2">
+                <h3>Inner 17 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/VLNPcm1X/TSAT.png')">
+                <img src="https://i.postimg.cc/VLNPcm1X/TSAT.png" alt="Inner Image 2">
+                <h3>Inner 18 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/VNWK60Wv/Cumplea-os10.png')">
+                <img src="https://i.postimg.cc/VNWK60Wv/Cumplea-os10.png" alt="Inner Image 2">
+                <h3>Inner 19 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/br3R0VkZ/tsat-anadromes.png')">
+                <img src="https://i.postimg.cc/br3R0VkZ/tsat-anadromes.png" alt="Inner Image 2">
+                <h3>Inner 20 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/ry35vSqY/tsat.png')">
+                <img src="https://i.postimg.cc/ry35vSqY/tsat.png" alt="Inner Image 2">
+                <h3>Inner 21 </h3>
+                <p>Price: 400 xats</p>
+               </div>      
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/XqHsn02p/fleva.png')">
+                <img src="https://i.postimg.cc/XqHsn02p/fleva.png" alt="Inner Image 2">
+                <h3>Inner 22 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/ZKKhCDDL/sebj.png')">
+                <img src="https://i.postimg.cc/ZKKhCDDL/sebj.png" alt="Inner Image 2">
+                <h3>Inner 23 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/520hT0MQ/Recopilacion-Barras.png')">
+                <img src="https://i.postimg.cc/520hT0MQ/Recopilacion-Barras.png"="Inner Image 2">
+                <h3>Inner 24 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/sxWZy3Py/Plantillas-Navide-as2017.png')">
+                <img src="https://i.postimg.cc/sxWZy3Py/Plantillas-Navide-as2017.png"="Inner Image 2">
+                <h3>Inner 25 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+<div class="image-item" onclick="openModal('https://i.postimg.cc/mDPsQPWC/Recopilacion-Barras.png')">
+                <img src="https://i.postimg.cc/mDPsQPWC/Recopilacion-Barras.png"="Inner Image 2">
+                <h3>Inner 26 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+<div class="image-item" onclick="openModal('https://i.postimg.cc/y608Qk4z/92874456-573198546945525-665962124085821440-n.png')">
+                <img src="https://i.postimg.cc/y608Qk4z/92874456-573198546945525-665962124085821440-n.png"="Inner Image 2">
+                <h3>Inner 27 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+            
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/XvmFCbvL/RADIO-MAIK.png')">
+                <img src="https://i.postimg.cc/XvmFCbvL/RADIO-MAIK.png"="Inner Image 2">
+                <h3>Inner 28 </h3>
+                <p>Price: 400 xats</p>
+               </div>                       
+
+       <div class="image-item" onclick="openModal('https://i.postimg.cc/9fx9JbS0/406419034-268282226218351-4926934828891738655-n.png')">
+                <img src="https://i.postimg.cc/9fx9JbS0/406419034-268282226218351-4926934828891738655-n.png"="Inner Image 2">
+                <h3>Inner 29 </h3>
+                <p>Price: 400 xats</p>
+               </div>                          
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/4yHFJmtv/33-3png.png')">
+                <img src="https://i.postimg.cc/4yHFJmtv/33-3png.png"="Inner Image 2">
+                <h3>Inner 30 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+<div class="image-item" onclick="openModal('https://i.postimg.cc/2SkDcQs3/chat.png')">
+                <img src="https://i.postimg.cc/2SkDcQs3/chat.png"="Inner Image 2">
+                <h3>Inner 31 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+<div class="image-item" onclick="openModal('https://i.postimg.cc/xCDtpDSC/tsat-sofi.png')">
+                <img src="https://i.postimg.cc/xCDtpDSC/tsat-sofi.png"="Inner Image 2">
+                <h3>Inner 32 </h3>
+                <p>Price: 400 xats</p>
+               </div>            
+
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/Fs8f8wWM/tsat-sevi.png')">
+                <img src="https://i.postimg.cc/Fs8f8wWM/tsat-sevi.png"="Inner Image 2">
+                <h3>Inner 33 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/xCnFTDpZ/fleva-tsat.png')">
+                <img src="https://i.postimg.cc/xCnFTDpZ/fleva-tsat.png"="Inner Image 2">
+                <h3>Inner 34 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+         <div class="image-item" onclick="openModal('https://i.postimg.cc/kMTPyp7K/Plantilla-Aire-Fresco.png')">
+                <img src="https://i.postimg.cc/kMTPyp7K/Plantilla-Aire-Fresco.png"="Inner Image 2">
+                <h3>Inner 35 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/3wqhLHJ6/26874563297-54bd7b8632-o.png')">
+                <img src="https://i.postimg.cc/3wqhLHJ6/26874563297-54bd7b8632-o.png"="Inner Image 2">
+                <h3>Inner 36 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/GtbQSR1R/43309016800-cdcb38e89b-o.png')">
+                <img src="https://i.postimg.cc/GtbQSR1R/43309016800-cdcb38e89b-o.png"="Inner Image 2">
+                <h3>Inner 37 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/66R4H7N1/image.png')">
+                <img src="https://i.postimg.cc/66R4H7N1/image.png"="Inner Image 2">
+                <h3>Inner 38 </h3>
+                <p>Price: 400 xats</p>
+               </div>     
+
+         <div class="image-item" onclick="openModal('https://i.postimg.cc/VvdRTnXh/C-Users-xristinakii-Desktop-tsat-aksa.png')">
+                <img src="https://i.postimg.cc/VvdRTnXh/C-Users-xristinakii-Desktop-tsat-aksa.png"="Inner Image 2">
+                <h3>Inner 39 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+  <div class="image-item" onclick="openModal('https://i.postimg.cc/BbcLrMT2/53108876608-26f0ff62af-o.png')">
+                <img src="https://i.postimg.cc/BbcLrMT2/53108876608-26f0ff62af-o.png"="Inner Image 2">
+                <h3>Inner 40 </h3>
+                <p>Price: 400 xats</p>
+               </div>     
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/9XkbYdwJ/tsat-sevi.png')">
+                <img src="https://i.postimg.cc/9XkbYdwJ/tsat-sevi.png"="Inner Image 2">
+                <h3>Inner 41 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/xjJh249v/fleva-tsat.png')">
+                <img src="https://i.postimg.cc/xjJh249v/fleva-tsat.png"="Inner Image 2">
+                <h3>Inner 42 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/JhPh0PdC/C-Users-xristinakii-Desktop-tsat-valentine.png')">
+                <img src="https://i.postimg.cc/JhPh0PdC/C-Users-xristinakii-Desktop-tsat-valentine.png"="Inner Image 2">
+                <h3>Inner 43 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+        <div class="image-item" onclick="openModal('https://i.postimg.cc/c423yphb/tsat-valentine.png')">
+                <img src="https://i.postimg.cc/c423yphb/tsat-valentine.png"="Inner Image 2">
+                <h3>Inner 44 </h3>
+                <p>Price: 400 xats</p>
+               </div>                   
+
+     <div class="image-item" onclick="openModal('https://i.postimg.cc/3xVCyGqF/blue-inimi-fata-gri.png')">
+                <img src="https://i.postimg.cc/3xVCyGqF/blue-inimi-fata-gri.png"="Inner Image 2">
+                <h3>Inner 45 </h3>
+                <p>Price: 400 xats</p>
+               </div>
+         <div class="image-item" onclick="openModal('https://i.postimg.cc/QM9gMSHQ/Xat-Inner.png')">
+                <img src="https://i.postimg.cc/QM9gMSHQ/Xat-Inner.png"="Inner Image 2">
+                <h3>Inner 46 </h3>
+                <p>Price: 400 xats</p>
+               </div>                      
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/25ZXnq31/TSAT.png')">
+                <img src="https://i.postimg.cc/25ZXnq31/TSAT.png"="Inner Image 2">
+                <h3>Inner 47 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+
+        <div class="image-item" onclick="openModal('https://i.postimg.cc/hvJSS5J6/92874456-573198546945525-665962124085821440-n-1.png')">
+                <img src="https://i.postimg.cc/hvJSS5J6/92874456-573198546945525-665962124085821440-n-1.png"="Inner Image 2">
+                <h3>Inner 48 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+  <div class="image-item" onclick="openModal('https://i.postimg.cc/nrsR2Chj/new-tsat.png')">
+                <img src="https://i.postimg.cc/nrsR2Chj/new-tsat.png"="Inner Image 2">
+                <h3>Inner 49 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+      <div class="image-item" onclick="openModal('https://i.postimg.cc/RZgw83BF/eede.png')">
+                <img src="https://i.postimg.cc/RZgw83BF/eede.png"="Inner Image 2">
+                <h3>Inner 50 </h3>
+                <p>Price: 400 xats</p>
+               </div>    
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/prVcFqgZ/Plantilla3.png')">
+                <img src="https://i.postimg.cc/prVcFqgZ/Plantilla3.png"="Inner Image 2">
+                <h3>Inner 51 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+       <div class="image-item" onclick="openModal('https://i.postimg.cc/Qt7KdKxs/106477842-629171401348239-687458505559123616-n.png')">
+                <img src="https://i.postimg.cc/Qt7KdKxs/106477842-629171401348239-687458505559123616-n.png"="Inner Image 2">
+                <h3>Inner 52 </h3>
+                <p>Price: 400 xats</p>
+               </div>                  
+<div class="image-item" onclick="openModal('https://i.postimg.cc/mgtwN3vj/92874456-573198546945525-665962124085821440-n.png')">
+                <img src="https://i.postimg.cc/mgtwN3vj/92874456-573198546945525-665962124085821440-n.png"="Inner Image 2">
+                <h3>Inner 53 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+
+     <div class="image-item" onclick="openModal('https://i.postimg.cc/MHQBGPVv/tsatneww.png')">
+                <img src="https://i.postimg.cc/MHQBGPVv/tsatneww.png"="Inner Image 2">
+                <h3>Inner 54 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/QtwMgVfZ/dsp2.png')">
+                <img src="https://i.postimg.cc/QtwMgVfZ/dsp2.png"="Inner Image 2">
+                <h3>Inner 55 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+      <div class="image-item" onclick="openModal('https://i.postimg.cc/vHq2JDXT/newwww-tsat.png')">
+                <img src="https://i.postimg.cc/vHq2JDXT/newwww-tsat.png"="Inner Image 2">
+                <h3>Inner 56 </h3>
+                <p>Price: 400 xats</p>
+               </div>                      
+  <div class="image-item" onclick="openModal('https://i.postimg.cc/0Q2Yf0mN/C-Users-xristinakii-Desktop-57.png')">
+                <img src="https://i.postimg.cc/0Q2Yf0mN/C-Users-xristinakii-Desktop-57.png"="Inner Image 2">
+                <h3>Inner 57 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/y6MQy2fp/58.png')">
+                <img src="https://i.postimg.cc/y6MQy2fp/58.png"="Inner Image 2">
+                <h3>Inner 58 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/pd1bWq2N/59.png')">
+                <img src="https://i.postimg.cc/pd1bWq2N/59.png"="Inner Image 2">
+                <h3>Inner 59 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/G3kJr6pD/58.png')">
+                <img src="https://i.postimg.cc/G3kJr6pD/58.png"="Inner Image 2">
+                <h3>Inner 60 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/hvRhcnGB/C-Users-xristinakii-Desktop-tsat-61.png')">
+                <img src="https://i.postimg.cc/hvRhcnGB/C-Users-xristinakii-Desktop-tsat-61.png"="Inner Image 2">
+                <h3>Inner 61 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Y2PwdCGz/dsp2.png')">
+                <img src="https://i.postimg.cc/Y2PwdCGz/dsp2.png"="Inner Image 2">
+                <h3>Inner 62 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+
+
+     <div class="image-item" onclick="openModal('https://i.postimg.cc/9M0d6xSr/Teken-Plantilla-Editable.png')">
+                <img src="https://i.postimg.cc/9M0d6xSr/Teken-Plantilla-Editable.png"="Inner Image 2">
+                <h3>Inner 63 </h3>
+                <p>Price: 400 xats</p>
+               </div>                    
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/mDDSqmxk/C-Users-xristinakii-Desktop-60-tsat.png')">
+                <img src="https://i.postimg.cc/mDDSqmxk/C-Users-xristinakii-Desktop-60-tsat.png"="Inner Image 2">
+                <h3>Inner 64 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/bv2Tg19m/tsat-aksa.png')">
+                <img src="https://i.postimg.cc/bv2Tg19m/tsat-aksa.png"="Inner Image 2">
+                <h3>Inner 65 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/FsS5MkCm/50064100761-bd96515673-o.png')">
+                <img src="https://i.postimg.cc/FsS5MkCm/50064100761-bd96515673-o.png"="Inner Image 2">
+                <h3>Inner 66 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+<div class="image-item" onclick="openModal('https://i.postimg.cc/9QVhRhNz/tsat.png')">
+                <img src="https://i.postimg.cc/9QVhRhNz/tsat.png"="Inner Image 2">
+                <h3>Inner 67 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+<div class="image-item" onclick="openModal('https://i.postimg.cc/prwP15ZB/tsat-aksa.png')">
+                <img src="https://i.postimg.cc/prwP15ZB/tsat-aksa.png"="Inner Image 2">
+                <h3>Inner 68 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/5NxsRfdN/tsat.png')">
+                <img src="https://i.postimg.cc/5NxsRfdN/tsat.png"="Inner Image 2">
+                <h3>Inner 69 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/y8LsVfNz/92874456-573198546945525-665962124085821440-n.png')">
+                <img src="https://i.postimg.cc/y8LsVfNz/92874456-573198546945525-665962124085821440-n.png"="Inner Image 2">
+                <h3>Inner 70 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/P5Z2xR1f/9e314f819e1b419881bbd97ab5219ce5.png')">
+                <img src="https://i.postimg.cc/P5Z2xR1f/9e314f819e1b419881bbd97ab5219ce5.png"="Inner Image 2">
+                <h3>Inner 71 </h3>
+                <p>Price: 400 xats</p>
+               </div>                    
+            
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/8cpgcMct/16609028319-18a2cac7e4-o.png')">
+                <img src="https://i.postimg.cc/8cpgcMct/16609028319-18a2cac7e4-o.png"="Inner Image 2">
+                <h3>Inner 72 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+<div class="image-item" onclick="openModal('https://i.postimg.cc/NFZN8FWX/chat.png')">
+                <img src="https://i.postimg.cc/NFZN8FWX/chat.png"="Inner Image 2">
+                <h3>Inner 73 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/VL14SZn9/tsat.png')">
+                <img src="https://i.postimg.cc/VL14SZn9/tsat.png"="Inner Image 2">
+                <h3>Inner 74 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/XvVD1r31/aa.png')">
+                <img src="https://i.postimg.cc/XvVD1r31/aa.png"="Inner Image 2">
+                <h3>Inner 75 </h3>
+                <p>Price: 400 xats</p>
+               </div>                      
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/br71kf1t/tsat.png')">
+                <img src="https://i.postimg.cc/br71kf1t/tsat.png"="Inner Image 2">
+                <h3>Inner 76 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+<div class="image-item" onclick="openModal('https://i.postimg.cc/ZnpFqydw/1.png')">
+                <img src="https://i.postimg.cc/ZnpFqydw/1.png"="Inner Image 2">
+                <h3>Inner 77 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/yxdVVNGM/cleantemplate22.png')">
+                <img src="https://i.postimg.cc/yxdVVNGM/cleantemplate22.png"="Inner Image 2">
+                <h3>Inner 78 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/WpZFJ8WL/newwww-tsat.png')">
+                <img src="https://i.postimg.cc/WpZFJ8WL/newwww-tsat.png"="Inner Image 2">
+                <h3>Inner 79 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+            
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/tJzzLCN3/80-chat.png')">
+                <img src="https://i.postimg.cc/tJzzLCN3/80-chat.png"="Inner Image 2">
+                <h3>Inner 80 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+            
+<div class="image-item" onclick="openModal('https://xatimg.com/image/AEhNwG0rENM6.png')">
+                <img src="https://xatimg.com/image/AEhNwG0rENM6.png"="Inner Image 2">
+                <h3>Inner 81 </h3>
+                <p>Price: 400 xats</p>
+               </div>         
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/TP3X5NSp/tsat-rempe.png')">
+                <img src="https://i.postimg.cc/TP3X5NSp/tsat-rempe.png"="Inner Image 2">
+                <h3>Inner 82 </h3>
+                <p>Price: 400 xats</p>
+               </div>                     
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/wT5bfzN8/fleva-tsat.png')">
+                <img src="https://i.postimg.cc/wT5bfzN8/fleva-tsat.png"="Inner Image 2">
+                <h3>Inner 83 </h3>
+                <p>Price: 400 xats</p>
+               </div>                     
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Fsv7B8gt/fleva-tsat.png')">
+                <img src="https://i.postimg.cc/Fsv7B8gt/fleva-tsat.png"="Inner Image 2">
+                <h3>Inner 84 </h3>
+                <p>Price: 400 xats</p>
+               </div>                  
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/NFKLyzxX/tsat-maik.png')">
+                <img src="https://i.postimg.cc/NFKLyzxX/tsat-maik.png"="Inner Image 2">
+                <h3>Inner 85 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/h4CDYmF5/C-Users-user-Desktop-haloo-tsat.png')">
+                <img src="https://i.postimg.cc/h4CDYmF5/C-Users-user-Desktop-haloo-tsat.png"="Inner Image 2">
+                <h3>Inner 86 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/tJcRWwQF/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/tJcRWwQF/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png"="Inner Image 2">
+                <h3>Inner 87 </h3>
+                <p>Price: 400 xats</p>
+               </div>            
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/HxMBhBxq/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/HxMBhBxq/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png"="Inner Image 2">
+                <h3>Inner 88 </h3>
+                <p>Price: 400 xats</p>
+               </div>    
+
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/hGw8vGTT/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/hGw8vGTT/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png"="Inner Image 2">
+                <h3>Inner 89 </h3>
+                <p>Price: 400 xats</p>
+               </div>        
+            
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/fTwyj8C7/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/fTwyj8C7/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png"="Inner Image 2">
+                <h3>Inner 90 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+
+
+           
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/cCWLSnxN/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/cCWLSnxN/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png"="Inner Image 2">
+                <h3>Inner 91 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+
+            
+        </div>
+
+        <div class="right-section">
+            <h2>Outers Section</h2>
+            
+            <div class="image-item" onclick="openModal('https://i.postimg.cc/yYch1tY9/image-1.png')">
+                <img src="https://i.postimg.cc/yYch1tY9/image-1.png" alt="Outer Image 1">
+                <h3> outer 1</h3>
+                <p>Price: 400 xats</p>
+            </div>
+
+            <div class="image-item" onclick="openModal('https://i.postimg.cc/d1hLhphr/522.png')">
+                <img src="https://i.postimg.cc/d1hLhphr/522.png" alt="Outer Image 2">
+                <h3>outer 2</h3>
+                <p>Price: 400 xats</p>
+            </div>
+            
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/528dp3Cv/511.png')">
+                <img src="https://i.postimg.cc/528dp3Cv/511.png" alt="Outer Image 1">
+                <h3>Outer 3</h3>
+                <p>Price: 400 xats</p>
+            </div> 
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/7ZZ0nBct/50fondos.png')">
+                <img src="https://i.postimg.cc/7ZZ0nBct/50fondos.png" alt="Outer Image 1">
+                <h3>Outer 4</h3>
+                <p>Price: 400 xats</p>
+            </div>
+
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/vBFybKw0/471.png')">
+                <img src="https://i.postimg.cc/vBFybKw0/471.png" alt="Outer Image 1">
+                <h3>Outer 5</h3>
+                <p>Price: 400 xats</p>
+            </div>
+            
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/nzR9KfTM/492.png')">
+                <img src="https://i.postimg.cc/nzR9KfTM/492.png" alt="Outer Image 1">
+                <h3>Outer 6</h3>
+                <p>Price: 400 xats</p>
+            </div>
+        
+        
+<div class="image-item" onclick="openModal('https://i.postimg.cc/CLFD3JnF/431.png')">
+                <img src="https://i.postimg.cc/CLFD3JnF/431.png" alt="Outer Image 1">
+                <h3>Outer 7</h3>
+                <p>Price: 400 xats</p>
+            </div>
+        
+
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/zBxwwCB1/357781314-197092533337321-9071262026817488524-n.jpg')">
+                <img src="https://i.postimg.cc/zBxwwCB1/357781314-197092533337321-9071262026817488524-n.jpg" alt="Outer Image 1">
+                <h3>Outer 8</h3>
+                <p>Price: 400 xats</p>
+            </div>
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/jjXTh7Bb/monika-radio.png')">
+                <img src="https://i.postimg.cc/jjXTh7Bb/monika-radio.png" alt="Outer Image 1">
+                <h3>Outer 9</h3>
+                <p>Price: 400 xats</p>
+            </div>     
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/Kvx8tm1B/image.png')">
+                <img src="https://i.postimg.cc/Kvx8tm1B/image.png" alt="Outer Image 1">
+                <h3>Outer 10</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/Gtd93yVg/image.png')">
+                <img src="https://i.postimg.cc/Gtd93yVg/image.png" alt="Outer Image 1">
+                <h3>Outer 11</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/zDQ2bF0g/MF-MARE.png')">
+                <img src="https://i.postimg.cc/zDQ2bF0g/MF-MARE.png" alt="Outer Image 1">
+                <h3>Outer 12</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+<div class="image-item" onclick="openModal('https://i.postimg.cc/JnZ3sjnb/Z1-Background.png')">
+                <img src="https://i.postimg.cc/JnZ3sjnb/Z1-Background.png" alt="Outer Image 1">
+                <h3>Outer 13</h3>
+                <p>Price: 400 xats</p>
+            </div>                 
+<div class="image-item" onclick="openModal('https://i.postimg.cc/KzDN9n2m/D-P-P2-MARE.png')">
+                <img src="https://i.postimg.cc/KzDN9n2m/D-P-P2-MARE.png" alt="Outer Image 1">
+                <h3>Outer 14</h3>
+                <p>Price: 400 xats</p>
+            </div>            
+  <div class="image-item" onclick="openModal('https://i.postimg.cc/vZfggM9F/91114362-565357444396302-3986452639712804864-o.png')">
+                <img src="https://i.postimg.cc/vZfggM9F/91114362-565357444396302-3986452639712804864-o.png" alt="Outer Image 1">
+                <h3>Outer 15</h3>
+                <p>Price: 400 xats</p>
+            </div>                      
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/wMtk9nNj/DSP1-Pc-Back-mare.png')">
+                <img src="https://i.postimg.cc/wMtk9nNj/DSP1-Pc-Back-mare.png" alt="Outer Image 1">
+                <h3>Outer 16</h3>
+                <p>Price: 400 xats</p>
+            </div>           
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/W1WYPRtx/dsp5.png')">
+                <img src="https://i.postimg.cc/W1WYPRtx/dsp5.png" alt="Outer Image 1">
+                <h3>Outer 17</h3>
+                <p>Price: 400 xats</p>
+            </div>          
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/NjrVg0n2/image.png')">
+                <img src="https://i.postimg.cc/NjrVg0n2/image.png" alt="Outer Image 1">
+                <h3>Outer 18</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/vH42zBb2/image.png')">
+                <img src="https://i.postimg.cc/vH42zBb2/image.png" alt="Outer Image 1">
+                <h3>Outer 19</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+<div class="image-item" onclick="openModal('https://i.postimg.cc/bYxYYc9y/pisw-ana.png')">
+                <img src="https://i.postimg.cc/bYxYYc9y/pisw-ana.png" alt="Outer Image 1">
+                <h3>Outer 20</h3>
+                <p>Price: 400 xats</p>
+            </div>       
+<div class="image-item" onclick="openModal('https://i.postimg.cc/sgyw1tvh/C-Users-xristinakii-Desktop-pisw.png')">
+                <img src="https://i.postimg.cc/sgyw1tvh/C-Users-xristinakii-Desktop-pisw.png" alt="Outer Image 1">
+                <h3>Outer 21</h3>
+                <p>Price: 400 xats</p>
+            </div>
+            
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/dQpdc16G/pisw-fleva.png')">
+                <img src="https://i.postimg.cc/dQpdc16G/pisw-fleva.png" alt="Outer Image 1">
+                <h3>Outer 22</h3>
+                <p>Price: 400 xats</p>
+            </div>
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/vm5KPWNB/pisw-fleva.png')">
+                <img src="https://i.postimg.cc/vm5KPWNB/pisw-fleva.png" alt="Outer Image 1">
+                <h3>Outer 23</h3>
+                <p>Price: 400 xats</p>
+            </div>    
+
+      <div class="image-item" onclick="openModal('https://i.postimg.cc/FHdP0J4p/image.png')">
+                <img src="https://i.postimg.cc/FHdP0J4p/image.png" alt="Outer Image 1">
+                <h3>Outer 24</h3>
+                <p>Price: 400 xats</p>
+            </div>                  
+            
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/wj4xWSJk/bgjefa.png')">
+                <img src="https://i.postimg.cc/wj4xWSJk/bgjefa.png" alt="Outer Image 1">
+                <h3>Outer 25</h3>
+                <p>Price: 400 xats</p>
+            </div>                  
+            
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/HsCqLZnQ/pisw-sofi.png')">
+                <img src="https://i.postimg.cc/HsCqLZnQ/pisw-sofi.png" alt="Outer Image 1">
+                <h3>Outer 26</h3>
+                <p>Price: 400 xats</p>
+            </div>                  
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/fLnhmfbS/C-Users-xristinakii-Desktop.png')">
+                <img src="https://i.postimg.cc/fLnhmfbS/C-Users-xristinakii-Desktop.png" alt="Outer Image 1">
+                <h3>Outer 27</h3>
+                <p>Price: 400 xats</p>
+            </div>             
+         <div class="image-item" onclick="openModal('https://i.postimg.cc/rFfD4kn4/maik-pisw.png')">
+                <img src="https://i.postimg.cc/rFfD4kn4/maik-pisw.png" alt="Outer Image 1">
+                <h3>Outer 28</h3>
+                <p>Price: 400 xats</p>
+            </div>  
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/WpZDks2h/406481317-268282256218348-8253065433935326935-n.png')">
+                <img src="https://i.postimg.cc/WpZDks2h/406481317-268282256218348-8253065433935326935-n.png" alt="Outer Image 1">
+                <h3>Outer 29</h3>
+                <p>Price: 400 xats</p>
+            </div>              
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/B6p1Xg54/33.png')">
+                <img src="https://i.postimg.cc/B6p1Xg54/33.png" alt="Outer Image 1">
+                <h3>Outer 30</h3>
+                <p>Price: 400 xats</p>
+            </div>    
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/44Q28Dsb/34.png')">
+                <img src="https://i.postimg.cc/44Q28Dsb/34.png" alt="Outer Image 1">
+                <h3>Outer 31</h3>
+                <p>Price: 400 xats</p>
+            </div>              
+          <div class="image-item" onclick="openModal('https://i.postimg.cc/htYCxQyV/sofi-pisw.png')">
+                <img src="https://i.postimg.cc/htYCxQyV/sofi-pisw.png"="Inner Image 2">
+                <h3>Outer 32 </h3>
+                <p>Price: 400 xats</p>
+               </div>              
+      <div class="image-item" onclick="openModal('https://i.postimg.cc/KvzqJ3w9/image.png')">
+                <img src="https://i.postimg.cc/KvzqJ3w9/image.png"="Inner Image 2">
+                <h3>Outer 33 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/W4H6xRLr/fleva.png')">
+                <img src="https://i.postimg.cc/W4H6xRLr/fleva.png"="Inner Image 2">
+                <h3>Outer 34 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/XYGZW5s1/Bg-Aire-Fresco.png')">
+                <img src="https://i.postimg.cc/XYGZW5s1/Bg-Aire-Fresco.png"="Inner Image 2">
+                <h3>Outer 35 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/26NcjHHy/26874560777-9b806882b1-o.png')">
+                <img src="https://i.postimg.cc/26NcjHHy/26874560777-9b806882b1-o.png"="Inner Image 2">
+                <h3>Outer 36 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+        <div class="image-item" onclick="openModal('https://i.postimg.cc/Hxz5n7fG/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/Hxz5n7fG/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 37 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/66R4H7N1/image.png')">
+                <img src="https://i.postimg.cc/nrHxYwxx/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 38 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/7hd9VYt0/C-Users-xristinakii-Desktop-radio-aksa.png')">
+                <img src="https://i.postimg.cc/7hd9VYt0/C-Users-xristinakii-Desktop-radio-aksa.png"="Inner Image 2">
+                <h3>Outer 39 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+<div class="image-item" onclick="openModal('https://i.postimg.cc/597ZvvZ2/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/597ZvvZ2/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 40 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/gjyB7rZg/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/gjyB7rZg/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 41 </h3>
+                <p>Price: 400 xats</p>
+               </div>                      
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/prHD3r21/fleva-pisw.png')">
+                <img src="https://i.postimg.cc/prHD3r21/fleva-pisw.png"="Inner Image 2">
+                <h3>Outer 42 </h3>
+                <p>Price: 400 xats</p>
+               </div>                      
+<div class="image-item" onclick="openModal('https://i.postimg.cc/8kBTzyFK/C-Users-xristinakii-Desktop-valentine-pisw.png')">
+                <img src="https://i.postimg.cc/8kBTzyFK/C-Users-xristinakii-Desktop-valentine-pisw.png"="Inner Image 2">
+                <h3>Outer 43 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+         <div class="image-item" onclick="openModal('https://i.postimg.cc/3NC3SDLh/valentine-pisw.png')">
+                <img src="https://i.postimg.cc/3NC3SDLh/valentine-pisw.png"="Inner Image 2">
+                <h3>Outer 44 </h3>
+                <p>Price: 400 xats</p>
+               </div>                         
+  <div class="image-item" onclick="openModal('https://i.postimg.cc/R0vCLs2S/5555.png')">
+                <img src="https://i.postimg.cc/R0vCLs2S/5555.png"="Inner Image 2">
+                <h3>Outer 45 </h3>
+                <p>Price: 400 xats</p>
+               </div>    
+
+      <div class="image-item" onclick="openModal('https://i.postimg.cc/W4NLLFzc/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/W4NLLFzc/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 46 </h3>
+                <p>Price: 400 xats</p>
+               </div>                       
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/zGWnjTSY/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/zGWnjTSY/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 47 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+        <div class="image-item" onclick="openModal('https://i.postimg.cc/P511X6YC/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik-1.png')">
+                <img src="https://i.postimg.cc/P511X6YC/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik-1.png"="Inner Image 2">
+                <h3>Outer 48 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/qMVSwx2p/new.png')">
+                <img src="https://i.postimg.cc/qMVSwx2p/new.png"="Inner Image 2">
+                <h3>Outer 49 </h3>
+                <p>Price: 400 xats</p>
+               </div>        
+
+ <div class="image-item" onclick="openModal(')"https://i.postimg.cc/qM5k50Fr/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png">
+                <img src="https://i.postimg.cc/qM5k50Fr/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 50 </h3>
+                <p>Price: 400 xats</p>
+               </div>        
+
+     <div class="image-item" onclick="openModal('https://i.postimg.cc/7YfmrGDf/76.png')">
+                <img src="https://i.postimg.cc/7YfmrGDf/76.png"="Inner Image 2">
+                <h3>Outer 51 </h3>
+                <p>Price: 400 xats</p>
+               </div>    
+
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/NGpBrf9w/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/NGpBrf9w/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 52 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/gJNXTQRZ/1111.png')">
+                <img src="https://i.postimg.cc/gJNXTQRZ/1111.png"="Inner Image 2">
+                <h3>Outer 53 </h3>
+                <p>Price: 400 xats</p>
+               </div>                     
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/8c2dPxC0/neo-pisw.png')">
+                <img src="https://i.postimg.cc/8c2dPxC0/neo-pisw.png"="Inner Image 2">
+                <h3>Outer 54 </h3>
+                <p>Price: 400 xats</p>
+               </div>                
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/43RbPNFt/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/43RbPNFt/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 55 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+<div class="image-item" onclick="openModal('https://i.postimg.cc/D0ykcHfM/neww.png')">
+                <img src="https://i.postimg.cc/D0ykcHfM/neww.png"="Inner Image 2">
+                <h3>Outer 56 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/mgByk4DM/C-Users-xristinakii-Desktop-57-1.png')">
+                <img src="https://i.postimg.cc/mgByk4DM/C-Users-xristinakii-Desktop-57-1.png"="Inner Image 2">
+                <h3>Outer 57 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+<div class="image-item" onclick="openModal('https://i.postimg.cc/dVHG4ysQ/58-1.png')">
+                <img src="https://i.postimg.cc/dVHG4ysQ/58-1.png"="Inner Image 2">
+                <h3>Outer 58 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+<div class="image-item" onclick="openModal('https://i.postimg.cc/bN6RFMLj/59-1.png')">
+                <img src="https://i.postimg.cc/bN6RFMLj/59-1.png"="Inner Image 2">
+                <h3>Outer 59 </h3>
+                <p>Price: 400 xats</p>
+               </div>       
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/76XHnxV7/60.png')">
+                <img src="https://i.postimg.cc/76XHnxV7/60.png"="Inner Image 2">
+                <h3>Outer 60 </h3>
+                <p>Price: 400 xats</p>
+               </div>   
+
+       <div class="image-item" onclick="openModal('https://i.postimg.cc/SsD50Bpx/61.png')">
+                <img src="https://i.postimg.cc/SsD50Bpx/61.png"="Inner Image 2">
+                <h3>Outer 61 </h3>
+                <p>Price: 400 xats</p>
+               </div>                  
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/bNGqPtc5/separator-nou.png')">
+                <img src="https://i.postimg.cc/bNGqPtc5/separator-nou.png"="Inner Image 2">
+                <h3>Outer 62 </h3>
+                <p>Price: 400 xats</p>
+               </div>  
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/Y2NFtdS6/62.png')">
+                <img src="https://i.postimg.cc/Y2NFtdS6/62.png"="Inner Image 2">
+                <h3>Outer 63 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/zB48HP8R/separator-nou.png')">
+                <img src="https://i.postimg.cc/zB48HP8R/separator-nou.png"="Inner Image 2">
+                <h3>Outer 64 </h3>
+                <p>Price: 400 xats</p>
+               </div>                    
+            
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/wjzggk7m/52990037354-9bfe1253b4-o.png')">
+                <img src="https://i.postimg.cc/wjzggk7m/52990037354-9bfe1253b4-o.png"="Inner Image 2">
+                <h3>Outer 65 </h3>
+                <p>Price: 400 xats</p>
+               </div> 
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/YCSVp4bh/33533414552-c626b8e85c-o.png')">
+                <img src="https://i.postimg.cc/YCSVp4bh/33533414552-c626b8e85c-o.png"="Inner Image 2">
+                <h3>Outer 66 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/MKm0w7CN/smile.png')">
+                <img src="https://i.postimg.cc/MKm0w7CN/smile.png"="Inner Image 2">
+                <h3>Outer 67 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/P5LR5FdN/radio-aksa.png')">
+                <img src="https://i.postimg.cc/P5LR5FdN/radio-aksa.png"="Inner Image 2">
+                <h3>Outer 68 </h3>
+                <p>Price: 400 xats</p>
+               </div>          
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/hjDJqZSx/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/hjDJqZSx/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 69 </h3>
+                <p>Price: 400 xats</p>
+               </div>        
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/XvTMJtSt/70.png')">
+                <img src="https://i.postimg.cc/XvTMJtSt/70.png"="Inner Image 2">
+                <h3>Outer 70 </h3>
+                <p>Price: 400 xats</p>
+               </div>    
+
+    <div class="image-item" onclick="openModal('https://i.postimg.cc/htktBpBq/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/htktBpBq/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 71 </h3>
+                <p>Price: 400 xats</p>
+               </div>                
+
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/sXJbkxmS/33533414552-c626b8e85c-o.png')">
+                <img src="https://i.postimg.cc/sXJbkxmS/33533414552-c626b8e85c-o.png"="Inner Image 2">
+                <h3>Outer 72 </h3>
+                <p>Price: 400 xats</p>
+               </div>                          
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/0NNBqTdb/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/0NNBqTdb/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 73 </h3>
+                <p>Price: 400 xats</p>
+               </div>                       
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Y9v2zxFb/fondo.png')">
+                <img src="https://i.postimg.cc/Y9v2zxFb/fondo.png"="Inner Image 2">
+                <h3>Outer 74 </h3>
+                <p>Price: 400 xats</p>
+               </div>                     
+<div class="image-item" onclick="openModal('https://i.postimg.cc/NfRcWrqQ/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/NfRcWrqQ/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 75 </h3>
+                <p>Price: 400 xats</p>
+               </div>
+
+   <div class="image-item" onclick="openModal('https://i.postimg.cc/Gtyycg6h/fondo.png')">
+                <img src="https://i.postimg.cc/Gtyycg6h/fondo.png"="Inner Image 2">
+                <h3>Outer 76 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/c1pFNdnD/chris11.png')">
+                <img src="https://i.postimg.cc/c1pFNdnD/chris11.png"="Inner Image 2">
+                <h3>Outer 77 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/4NgDbyws/separator-2.png')">
+                <img src="https://i.postimg.cc/4NgDbyws/separator-2.png"="Inner Image 2">
+                <h3>Outer 78 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/XNtPsjkB/pisw.png')">
+                <img src="https://i.postimg.cc/XNtPsjkB/pisw.png"="Inner Image 2">
+                <h3>Outer 79 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+            
+<div class="image-item" onclick="openModal('https://i.postimg.cc/g0Pn6qW0/80-pisw.png')">
+                <img src="https://i.postimg.cc/g0Pn6qW0/80-pisw.png"="Inner Image 2">
+                <h3>Outer 80 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://xatimg.com/image/ft4oaHuehHT0.png')">
+                <img src="https://xatimg.com/image/ft4oaHuehHT0.png"="Inner Image 2">
+                <h3>Outer 81 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+ <div class="image-item" onclick="openModal('https://i.postimg.cc/m2KcwCRL/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/m2KcwCRL/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 82 </h3>
+                <p>Price: 400 xats</p>
+               </div>                          
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/d1vh98cK/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/d1vh98cK/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 83 </h3>
+                <p>Price: 400 xats</p>
+               </div>                 
+<div class="image-item" onclick="openModal('https://i.postimg.cc/J7P9fBj1/84.png')">
+                <img src="https://i.postimg.cc/J7P9fBj1/84.png"="Inner Image 2">
+                <h3>Outer 84 </h3>
+                <p>Price: 400 xats</p>
+               </div>               
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/G2HsYtL9/image.png')">
+                <img src="https://i.postimg.cc/G2HsYtL9/image.png"="Inner Image 2">
+                <h3>Outer 85 </h3>
+                <p>Price: 400 xats</p>
+               </div>             
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Qd7jVnF2/C-Users-user-Desktop-haloowen.png')">
+                <img src="https://i.postimg.cc/Qd7jVnF2/C-Users-user-Desktop-haloowen.png"="Inner Image 2">
+                <h3>Outer 86 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/4dZgcZYD/halo2.png')">
+                <img src="https://i.postimg.cc/4dZgcZYD/halo2.png"="Inner Image 2">
+                <h3>Outer 87 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+<div class="image-item" onclick="openModal('https://i.postimg.cc/XJ55wv7W/genethlia.png')">
+                <img src="https://i.postimg.cc/XJ55wv7W/genethlia.png"="Inner Image 2">
+                <h3>Outer 88 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/ZnmdvvRB/image.png')">
+                <img src="https://i.postimg.cc/ZnmdvvRB/image.png"="Inner Image 2">
+                <h3>Outer 89 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+            
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/Fs8tsRYf/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/Fs8tsRYf/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 90 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+<div class="image-item" onclick="openModal('https://i.postimg.cc/s2ZjGc1r/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png')">
+                <img src="https://i.postimg.cc/s2ZjGc1r/Plantilla-Html5-Background-Fondo-Trasero-By-Uniik.png"="Inner Image 2">
+                <h3>Outer 91 </h3>
+                <p>Price: 400 xats</p>
+               </div>           
+
+            
+        </div>
+
+     
+        </div>
+       
+    
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <img id="modalImage">
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+
+        function openModal(imageUrl) {
+            modal.style.display = "block";
+            modalImg.src = imageUrl;
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
+      
+ 
