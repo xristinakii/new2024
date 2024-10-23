@@ -1,1 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PcBack  Store</title>
+    <style>
+        /* CSS styles */
+header {
+    background-color: #9a2df5a6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+        @media only screen and (max-width: 600px) {
+  /* Mobile-specific styles go here */
+.content h2 {
+    font-size: 16px;
+  }
 
+  .box,
+  .box2 {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .background-img {
+    height: 300px;
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .box,
+  .box2 {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+    
+}  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           background-image: url("https://i.postimg.cc/C548DM8m/gold-texture.jpg");
+            background-size: cover;
+        }
+      
+        .sephiroth-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .sephiroth-menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .sephiroth-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .sephiroth-menu li {
+            margin-right: 20px;
+        }
+        .sephiroth-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .sephiroth-image-item {
+            display: inline-block;
+            width: 10%;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .sephiroth-image-item img {
+            width: 100%;
+            max-height: 450px;
+        }
+        .sephiroth-modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .sephiroth-modal-content {
+            display: block;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 800px;
+            max-height: 80%;
+        }
+        .sephiroth-modal-content img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .sephiroth-close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sephiroth-container">
+        <header> <h1 style="text-align: center;">PC Back Store</h1>
+</header>
+
+
+<section id="outer">
+            <h2>Latest models</h2>
+
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://xatimg.com/image/p3M0tNHbv7Ru.png')">
+                <img src="https://xatimg.com/image/p3M0tNHbv7Ru.png" alt="Image 1">
+                <h3>P 01</h3>
+                <p>Price: 500 xats</p>
+            </div>
+    
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/XYHL3LjB/corinamov.png')">
+                <img src="https://i.postimg.cc/XYHL3LjB/corinamov.png" alt="Image 1">
+                <h3>P 02</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/CKdgLcb3/galbenchifl.png')">
+                <img src="https://i.postimg.cc/CKdgLcb3/galbenchifl.png" alt="Image 1">
+                <h3>P 03</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/jqWdxSR8/Jefiipv.png')">
+                <img src="https://i.postimg.cc/jqWdxSR8/Jefiipv.png" alt="Image 1">
+                <h3>P 04</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/C1gHFQq7/kiflt.png')">
+                <img src="https://i.postimg.cc/C1gHFQq7/kiflt.png" alt="Image 1">
+                <h3>P 05</h3>
+                <p>Price: 500 xats</p>
+            </div>                     
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/15mSgRSh/mecreaate1.png')">
+                <img src="https://i.postimg.cc/15mSgRSh/mecreaate1.png" alt="Image 1">
+                <h3>P 06</h3>
+                <p>Price: 500 xats</p>
+            </div>                        
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/sgn5F2jV/mecreaate2.png')">
+                <img src="https://i.postimg.cc/sgn5F2jV/mecreaate2.png" alt="Image 1">
+                <h3>P 07</h3>
+                <p>Price: 500 xats</p>
+            </div>                      
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/7L2hBPbt/jsmnpcbk.png')">
+                <img src="https://i.postimg.cc/7L2hBPbt/jsmnpcbk.png" alt="Image 1">
+                <h3>P 08</h3>
+                <p>Price: 500 xats</p>
+            </div>                   
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/kG17JLBt/paulinapv.png')">
+                <img src="https://i.postimg.cc/kG17JLBt/paulinapv.png" alt="Image 1">
+                <h3>P 09</h3>
+                <p>Price: 500 xats</p>
+            </div>                   
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ncNt347Z/meowpcb.png')">
+                <img src="https://i.postimg.cc/ncNt347Z/meowpcb.png" alt="Image 1">
+                <h3>P 10</h3>
+                <p>Price: 500 xats</p>
+            </div>                      
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/wTz6zcMV/103.png')">
+                <img src="https://i.postimg.cc/wTz6zcMV/103.png" alt="Image 1">
+                <h3>P 11</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/CLwVXhrr/2.png')">
+                <img src="https://i.postimg.cc/CLwVXhrr/2.png" alt="Image 1">
+                <h3>P 12</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/4yJFLd4z/Corina-Roz-Pcb.png')">
+                <img src="https://i.postimg.cc/4yJFLd4z/Corina-Roz-Pcb.png" alt="Image 1">
+                <h3>P 13</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/nh7YmxpZ/55.png')">
+                <img src="https://i.postimg.cc/nh7YmxpZ/55.png" alt="Image 1">
+                <h3>P 14</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/x1SNWzVD/Corina-Roz-Pcb.png')">
+                <img src="https://i.postimg.cc/x1SNWzVD/Corina-Roz-Pcb.png" alt="Image 1">
+                <h3>P 15</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/Vk1FPN3T/Editable.png')">
+                <img src="https://i.postimg.cc/Vk1FPN3T/Editable.png" alt="Image 1">
+                <h3>P 16</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/yNDgM4Yt/willian-prive.png')">
+                <img src="https://i.postimg.cc/yNDgM4Yt/willian-prive.png" alt="Image 1">
+                <h3>P 17</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/sDfN5w21/Deeapink.png')">
+                <img src="https://i.postimg.cc/sDfN5w21/Deeapink.png" alt="Image 1">
+                <h3>P 18</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/prSzhWTf/nikita-mov.png')">
+                <img src="https://i.postimg.cc/prSzhWTf/nikita-mov.png" alt="Image 1">
+                <h3>P 19</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/RVnnpzhY/grey.png')">
+                <img src="https://i.postimg.cc/RVnnpzhY/grey.png" alt="Image 1">
+                <h3>P 20</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/nrdbq5bY/nio-cata.png')">
+                <img src="https://i.postimg.cc/nrdbq5bY/nio-cata.png" alt="Image 1">
+                <h3>P 21</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/MGYscB81/fundo-branco.png')">
+                <img src="https://i.postimg.cc/MGYscB81/fundo-branco.png" alt="Image 1">
+                <h3>P 22</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/XJRxmkKS/fundo-rosa.png')">
+                <img src="https://i.postimg.cc/XJRxmkKS/fundo-rosa.png" alt="Image 1">
+                <h3>P 23</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/8CFRGrz1/pv-azul-Recovered.png')">
+                <img src="https://i.postimg.cc/8CFRGrz1/pv-azul-Recovered.png" alt="Image 1">
+                <h3>P 24</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/7hQPqb6k/cleantemplate22.png')">
+                <img src="https://i.postimg.cc/7hQPqb6k/cleantemplate22.png" alt="Image 1">
+                <h3>P 25</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/T1Z8kb1p/118.png')">
+                <img src="https://i.postimg.cc/T1Z8kb1p/118.png" alt="Image 1">
+                <h3>P 26</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/7YxQkm8w/62.png')">
+                <img src="https://i.postimg.cc/7YxQkm8w/62.png" alt="Image 1">
+                <h3>P 27</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/LX9ZXYHY/jfkfjgjfk.png')">
+                <img src="https://i.postimg.cc/LX9ZXYHY/jfkfjgjfk.png" alt="Image 1">
+                <h3>P 28</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/hG6tFXXR/image.png')">
+                <img src="https://i.postimg.cc/hG6tFXXR/image.png" alt="Image 1">
+                <h3>P 29</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/9MyVvJ3y/19344619860.png')">
+                <img src="https://i.postimg.cc/9MyVvJ3y/19344619860.png" alt="Image 1">
+                <h3>P 30</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/hjBN7nw7/123.png')">
+                <img src="https://i.postimg.cc/hjBN7nw7/123.png" alt="Image 1">
+                <h3>P 31</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/YCFXNVQN/124.png')">
+                <img src="https://i.postimg.cc/YCFXNVQN/124.png" alt="Image 1">
+                <h3>P 32</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/6QJBzDgB/53.png')">
+                <img src="https://i.postimg.cc/6QJBzDgB/53.png" alt="Image 1">
+                <h3>P 33</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/FsLqG74J/126.png')">
+                <img src="https://i.postimg.cc/FsLqG74J/126.png" alt="Image 1">
+                <h3>P 34</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/s2XbYKD3/127.png')">
+                <img src="https://i.postimg.cc/s2XbYKD3/127.png" alt="Image 1">
+                <h3>P 35</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/cH77rGyC/128.png')">
+                <img src="https://i.postimg.cc/cH77rGyC/128.png" alt="Image 1">
+                <h3>P 36</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/gJKRGy86/129.png')">
+                <img src="https://i.postimg.cc/gJKRGy86/129.png" alt="Image 1">
+                <h3>P 37</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/FsRvnztz/Amelly-Pc-Bck-Gries.png')">
+                <img src="https://i.postimg.cc/FsRvnztz/Amelly-Pc-Bck-Gries.png" alt="Image 1">
+                <h3>P 38</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/fWHPgvfn/39.png')">
+                <img src="https://i.postimg.cc/fWHPgvfn/39.png" alt="Image 1">
+                <h3>P 39</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://xatimg.com/image/YV2s0XFEF966.png')">
+                <img src="https://xatimg.com/image/YV2s0XFEF966.png" alt="Image 1">
+                <h3>P 40</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/CxqfzDCn/no-85.png')">
+                <img src="https://i.postimg.cc/CxqfzDCn/no-85.png" alt="Image 1">
+                <h3>P 41</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/fRvVQqR2/zeygari.png')">
+                <img src="https://i.postimg.cc/fRvVQqR2/zeygari.png" alt="Image 1">
+                <h3>P 42</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/pLcVrHs0/no-86.png')">
+                <img src="https://i.postimg.cc/pLcVrHs0/no-86.png" alt="Image 1">
+                <h3>P 43</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/pT8b1wFx/Pcback-Gabriela.png')">
+                <img src="https://i.postimg.cc/pT8b1wFx/Pcback-Gabriela.png" alt="Image 1">
+                <h3>P 44</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+    
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/9MbSzb3M/pcback-1.png')">
+                <img src="https://i.postimg.cc/9MbSzb3M/pcback-1.png" alt="Image 1">
+                <h3>P 45</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/tg2p6mgx/pcback-2.png')">
+                <img src="https://i.postimg.cc/tg2p6mgx/pcback-2.png" alt="Image 1">
+                <h3>P 46</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/wjZZFD9V/47.png')">
+                <img src="https://i.postimg.cc/wjZZFD9V/47.png" alt="Image 1">
+                <h3>P 47</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/wBqP7YYs/48.png')">
+                <img src="https://i.postimg.cc/wBqP7YYs/48.png" alt="Image 1">
+                <h3>P 48</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ZnP6kyC1/49.png')">
+                <img src="https://i.postimg.cc/ZnP6kyC1/49.png" alt="Image 1">
+                <h3>P 49</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/gJpxYcG1/corinamov.png')">
+                <img src="https://i.postimg.cc/gJpxYcG1/corinamov.png" alt="Image 1">
+                <h3>P 50</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/QNm7f8MQ/2.png')">
+                <img src="https://i.postimg.cc/QNm7f8MQ/2.png" alt="Image 1">
+                <h3>P 51</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+    
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/gjj2SPMs/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/gjj2SPMs/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 52</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+     <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/WzhC90KD/C-Users-xristinakii-Desktop-Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/WzhC90KD/C-Users-xristinakii-Desktop-Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 53</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+     <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/MH6QBB7D/2.png')">
+                <img src="https://i.postimg.cc/MH6QBB7D/2.png" alt="Image 1">
+                <h3>P 54</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/284ZQn2D/2.png')">
+                <img src="https://i.postimg.cc/284ZQn2D/2.png" alt="Image 1">
+                <h3>P 55</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/NFGZrFwZ/2-Recovered.png')">
+                <img src="https://i.postimg.cc/NFGZrFwZ/2-Recovered.png" alt="Image 1">
+                <h3>P 56</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/qR3txjXd/51486952051-41114e08a3-o.png')">
+                <img src="https://i.postimg.cc/qR3txjXd/51486952051-41114e08a3-o.png" alt="Image 1">
+                <h3>P 57</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/RZBk62gP/58.png')">
+                <img src="https://i.postimg.cc/RZBk62gP/58.png" alt="Image 1">
+                <h3>P 58</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/JnZ3kY6q/filo.png')">
+                <img src="https://i.postimg.cc/JnZ3kY6q/filo.png" alt="Image 1">
+                <h3>P 59</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/fWgWdWd8/yan-vinho-pv.png')">
+                <img src="https://i.postimg.cc/fWgWdWd8/yan-vinho-pv.png" alt="Image 1">
+                <h3>P 60</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/W4Wp7sKp/yanit.png')">
+                <img src="https://i.postimg.cc/W4Wp7sKp/yanit.png" alt="Image 1">
+                <h3>P 61</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/C1WGs922/51064390558-f3e2d8498a-o.png')">
+                <img src="https://i.postimg.cc/C1WGs922/51064390558-f3e2d8498a-o.png" alt="Image 1">
+                <h3>P 62</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+   
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/MH2BQVM2/44210788125-1fcb09481b-o.png')">
+                <img src="https://i.postimg.cc/MH2BQVM2/44210788125-1fcb09481b-o.png" alt="Image 1">
+                <h3>P 63</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/TY2wHtXN/52364613676-d749cc2450-o.png')">
+                <img src="https://i.postimg.cc/TY2wHtXN/52364613676-d749cc2450-o.png" alt="Image 1">
+                <h3>P 64</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/6qb7tPs0/64.png')">
+                <img src="https://i.postimg.cc/6qb7tPs0/64.png" alt="Image 1">
+                <h3>P 65</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/DzZZfsYj/43311524700-1af9a3f12e-o.png')">
+                <img src="https://i.postimg.cc/DzZZfsYj/43311524700-1af9a3f12e-o.png" alt="Image 1">
+                <h3>P 66</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ZnNzvGzX/51702142778-7c3a396a68-o.png')">
+                <img src="https://i.postimg.cc/ZnNzvGzX/51702142778-7c3a396a68-o.png" alt="Image 1">
+                <h3>P 67</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+          
+
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/TwCFx6Gz/50748996707-f3baafdc69-o.png')">
+                <img src="https://i.postimg.cc/TwCFx6Gz/50748996707-f3baafdc69-o.png" alt="Image 1">
+                <h3>P 68</h3>
+                <p>Price: 500 xats</p>
+            </div>     
+             
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/CxJczVzJ/43311524700-1af9a3f12e-o.png')">
+                <img src="https://i.postimg.cc/CxJczVzJ/43311524700-1af9a3f12e-o.png" alt="Image 1">
+                <h3>P 69</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/tCwrk0n9/plantilla-Editable.jpg')">
+                <img src="https://i.postimg.cc/tCwrk0n9/plantilla-Editable.jpg" alt="Image 1">
+                <h3>P 70</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/FFqHvV7T/plantilla-Editable.jpg')">
+                <img src="https://i.postimg.cc/FFqHvV7T/plantilla-Editable.jpg" alt="Image 1">
+                <h3>P 71</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/KYC5nxNC/Katya-Privado-1.jpg')">
+                <img src="https://i.postimg.cc/KYC5nxNC/Katya-Privado-1.jpg" alt="Image 1">
+                <h3>P 72</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/DycXTR9Y/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/DycXTR9Y/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 73</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/cCT8sFvt/Xat-Inner.png')">
+                <img src="https://i.postimg.cc/cCT8sFvt/Xat-Inner.png" alt="Image 1">
+                <h3>P 74</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+     <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/kXj46PLK/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/kXj46PLK/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 75</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/2SpTGH7m/55.png')">
+                <img src="https://i.postimg.cc/2SpTGH7m/55.png" alt="Image 1">
+                <h3>P 76</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/4dT2QfZZ/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/4dT2QfZZ/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 77</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/fLMT9Vzm/no-86.png')">
+                <img src="https://i.postimg.cc/fLMT9Vzm/no-86.png" alt="Image 1">
+                <h3>P 78</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/RC77q48H/Editable.png')">
+                <img src="https://i.postimg.cc/RC77q48H/Editable.png" alt="Image 1">
+                <h3>P 79</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/vHvTgSqC/image.png')">
+                <img src="https://i.postimg.cc/vHvTgSqC/image.png" alt="Image 1">
+                <h3>P 80</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/3rDHG978/pcback-2.png')">
+                <img src="https://i.postimg.cc/3rDHG978/pcback-2.png" alt="Image 1">
+                <h3>P 81</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/KjRTGzhn/82.png')">
+                <img src="https://i.postimg.cc/KjRTGzhn/82.png" alt="Image 1">
+                <h3>P 82</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/rwh4JynB/83.png')">
+                <img src="https://i.postimg.cc/rwh4JynB/83.png" alt="Image 1">
+                <h3>P 83</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/jdkwY6RB/82.png')">
+                <img src="https://i.postimg.cc/jdkwY6RB/82.png" alt="Image 1">
+                <h3>P 84</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/HxPWYNbk/image.png')">
+                <img src="https://i.postimg.cc/HxPWYNbk/image.png" alt="Image 1">
+                <h3>P 85</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/YCTyDSwB/neoooo.png')">
+                <img src="https://i.postimg.cc/YCTyDSwB/neoooo.png" alt="Image 1">
+                <h3>P 86</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/HW67L8TF/cacau-dourado.png')">
+                <img src="https://i.postimg.cc/HW67L8TF/cacau-dourado.png" alt="Image 1">
+                <h3>P 87</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/zGmwxD8f/cristina.png')">
+                <img src="https://i.postimg.cc/zGmwxD8f/cristina.png" alt="Image 1">
+                <h3>P 88</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/MTQ07Trq/deusa-dourada.png')">
+                <img src="https://i.postimg.cc/MTQ07Trq/deusa-dourada.png" alt="Image 1">
+                <h3>P 89</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/QCFRPGBM/image.png')">
+                <img src="https://i.postimg.cc/QCFRPGBM/image.png" alt="Image 1">
+                <h3>P 90</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/rF3t7SHy/willian-prive.png')">
+                <img src="https://i.postimg.cc/rF3t7SHy/willian-prive.png" alt="Image 1">
+                <h3>P 91</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/pTrD18fx/C-Users-xristinakii-Desktop-92.png')">
+                <img src="https://i.postimg.cc/pTrD18fx/C-Users-xristinakii-Desktop-92.png" alt="Image 1">
+                <h3>P 92</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/J7dhG0kp/93.png')">
+                <img src="https://i.postimg.cc/J7dhG0kp/93.png" alt="Image 1">
+                <h3>P 93</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/vHCqb5t0/94.png')">
+                <img src="https://i.postimg.cc/vHCqb5t0/94.png" alt="Image 1">
+                <h3>P 94</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/SR5Tv9KY/49713859513-1fc35edabf-o.png')">
+                <img src="https://i.postimg.cc/SR5Tv9KY/49713859513-1fc35edabf-o.png" alt="Image 1">
+                <h3>P 95</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ZqntZCnj/96.png')">
+                <img src="https://i.postimg.cc/ZqntZCnj/96.png" alt="Image 1">
+                <h3>P 96</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ZnHMM2J5/51164732088-6baf6410d1-o.png')">
+                <img src="https://i.postimg.cc/ZnHMM2J5/51164732088-6baf6410d1-o.png" alt="Image 1">
+                <h3>P 97</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ZR0jdVnY/49713859513-1fc35edabf-o.png')">
+                <img src="https://i.postimg.cc/ZR0jdVnY/49713859513-1fc35edabf-o.png" alt="Image 1">
+                <h3>P 98</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/T3Bwtrp3/yanit.png')">
+                <img src="https://i.postimg.cc/T3Bwtrp3/yanit.png" alt="Image 1">
+                <h3>P 99</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/KYsgr6DP/Xat-Inner22.png')">
+                <img src="https://i.postimg.cc/KYsgr6DP/Xat-Inner22.png" alt="Image 1">
+                <h3>P 100</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/J7JBym4Z/PV-Caricia1-23.png')">
+                <img src="https://i.postimg.cc/J7JBym4Z/PV-Caricia1-23.png" alt="Image 1">
+                <h3>P 101</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/RZTY4jHz/Pv-Dama-Marzo24.png')">
+                <img src="https://i.postimg.cc/RZTY4jHz/Pv-Dama-Marzo24.png" alt="Image 1">
+                <h3>P 102</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/jSvMGPpx/Pv-Kevin.png')">
+                <img src="https://i.postimg.cc/jSvMGPpx/Pv-Kevin.png" alt="Image 1">
+                <h3>P 103</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/26jrCQ60/Pv-PAOLA02.png')">
+                <img src="https://i.postimg.cc/26jrCQ60/Pv-PAOLA02.png" alt="Image 1">
+                <h3>P 104</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/1RkRqNY3/PV-Shelly-Dorado-2-23.png')">
+                <img src="https://i.postimg.cc/1RkRqNY3/PV-Shelly-Dorado-2-23.png" alt="Image 1">
+                <h3>P 105</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/qMqczSST/PV-To-o.png')">
+                <img src="https://i.postimg.cc/qMqczSST/PV-To-o.png" alt="Image 1">
+                <h3>P 106</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/6pwW0MHL/PV-Shelly-Dorado-2-23-Recovered.png')">
+                <img src="https://i.postimg.cc/6pwW0MHL/PV-Shelly-Dorado-2-23-Recovered.png" alt="Image 1">
+                <h3>P 107</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/GpV8qDCY/108.png')">
+                <img src="https://i.postimg.cc/GpV8qDCY/108.png" alt="Image 1">
+                <h3>P 108</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/25sF1wdK/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/25sF1wdK/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 109</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/7Zss1pMf/109.png')">
+                <img src="https://i.postimg.cc/7Zss1pMf/109.png" alt="Image 1">
+                <h3>P 110</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/d17Yrs19/Pv-Edgar.png')">
+                <img src="https://i.postimg.cc/d17Yrs19/Pv-Edgar.png" alt="Image 1">
+                <h3>P 111</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/mD4YFDVv/Pv-Shelly-Agosto-Gris-Negro23.png')">
+                <img src="https://i.postimg.cc/mD4YFDVv/Pv-Shelly-Agosto-Gris-Negro23.png" alt="Image 1">
+                <h3>P 112</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/MpRtchqj/Pv-Shelly-2.png')">
+                <img src="https://i.postimg.cc/MpRtchqj/Pv-Shelly-2.png" alt="Image 1">
+                <h3>P 113</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/Kcpnrcc0/newww.png')">
+                <img src="https://i.postimg.cc/Kcpnrcc0/newww.png" alt="Image 1">
+                <h3>P 114</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/hGWWKZzp/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/hGWWKZzp/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 115</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ryNRX8Cz/Pv-Biby.png')">
+                <img src="https://i.postimg.cc/ryNRX8Cz/Pv-Biby.png" alt="Image 1">
+                <h3>P 116</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/xCkxJSBM/Plantilla-markos.png')">
+                <img src="https://i.postimg.cc/xCkxJSBM/Plantilla-markos.png" alt="Image 1">
+                <h3>P 117</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/rmKS1Kvs/By-Uniik0075.png')">
+                <img src="https://i.postimg.cc/rmKS1Kvs/By-Uniik0075.png" alt="Image 1">
+                <h3>P 118</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/x1KtfFvT/116.png')">
+                <img src="https://i.postimg.cc/x1KtfFvT/116.png" alt="Image 1">
+                <h3>P 119</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/3Nd6BntF/Pv-Biby-Recovered.png')">
+                <img src="https://i.postimg.cc/3Nd6BntF/Pv-Biby-Recovered.png" alt="Image 1">
+                <h3>P 120</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/tJ4DPSn1/pcback-2.png')">
+                <img src="https://i.postimg.cc/tJ4DPSn1/pcback-2.png" alt="Image 1">
+                <h3>P 121</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/qqWnRjsH/plantilla-rosas.png')">
+                <img src="https://i.postimg.cc/qqWnRjsH/plantilla-rosas.png" alt="Image 1">
+                <h3>P 122</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/jdrPGkSy/83.png')">
+                <img src="https://i.postimg.cc/jdrPGkSy/83.png" alt="Image 1">
+                <h3>P 123</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+    
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/Pxwv7mG6/PV-Caricia1-23-Recovered.png')">
+                <img src="https://i.postimg.cc/Pxwv7mG6/PV-Caricia1-23-Recovered.png" alt="Image 1">
+                <h3>P 124</h3>
+                <p>Price: 500 xats</p>
+            </div>          
+    
+    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/V6gc2w1L/125.png')">
+                <img src="https://i.postimg.cc/V6gc2w1L/125.png" alt="Image 1">
+                <h3>P 125</h3>
+                <p>Price: 500 xats</p>
+            </div>          
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/CMcSv4KG/126.png')">
+                <img src="https://i.postimg.cc/CMcSv4KG/126.png" alt="Image 1">
+                <h3>P 126</h3>
+                <p>Price: 500 xats</p>
+            </div>          
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/85Z4tSyV/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png')">
+                <img src="https://i.postimg.cc/85Z4tSyV/Plantilla-Html5-Cajita-Pcback-By-Uniik-Texturas.png" alt="Image 1">
+                <h3>P 127</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/J4QbwQ7P/Pv-Diego.png')">
+                <img src="https://i.postimg.cc/J4QbwQ7P/Pv-Diego.png" alt="Image 1">
+                <h3>P 128</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+    
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/NGNWz7Rc/Pv-Ester.png')">
+                <img src="https://i.postimg.cc/NGNWz7Rc/Pv-Ester.png" alt="Image 1">
+                <h3>P 129</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/xCfwFNbZ/Pv-Ester.png')">
+                <img src="https://i.postimg.cc/xCfwFNbZ/Pv-Ester.png" alt="Image 1">
+                <h3>P 130</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/GmCSD2JY/kiflt.png')">
+                <img src="https://i.postimg.cc/GmCSD2JY/kiflt.png" alt="Image 1">
+                <h3>P 131</h3>
+                <p>Price: 500 xats</p>
+            </div>    
+
+     <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ydYVHR1y/53580261138-5928036c53-o.png')">
+                <img src="https://i.postimg.cc/ydYVHR1y/53580261138-5928036c53-o.png" alt="Image 1">
+                <h3>P 132</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/Fz2HL2nK/PV-Shelly-Dorado-2-23.png')">
+                <img src="https://i.postimg.cc/Fz2HL2nK/PV-Shelly-Dorado-2-23.png" alt="Image 1">
+                <h3>P 133</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/htCHs8PT/125555.png')">
+                <img src="https://i.postimg.cc/htCHs8PT/125555.png" alt="Image 1">
+                <h3>P 134</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/VNhVMTQB/Laila.png')">
+                <img src="https://i.postimg.cc/VNhVMTQB/Laila.png" alt="Image 1">
+                <h3>P 135</h3>
+                <p>Price: 500 xats</p>
+            </div>      
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/d3Lt4XDQ/Pv-Shelly4.png')">
+                <img src="https://i.postimg.cc/d3Lt4XDQ/Pv-Shelly4.png" alt="Image 1">
+                <h3>P 136</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/252tQpSV/Anayeli.png')">
+                <img src="https://i.postimg.cc/252tQpSV/Anayeli.png" alt="Image 1">
+                <h3>P 137</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/s24C8RsR/Pv-Gaby.png')">
+                <img src="https://i.postimg.cc/s24C8RsR/Pv-Gaby.png" alt="Image 1">
+                <h3>P 138</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/s2Nqbfqq/Pv-Jean.png')">
+                <img src="https://i.postimg.cc/s2Nqbfqq/Pv-Jean.png" alt="Image 1">
+                <h3>P 139</h3>
+                <p>Price: 500 xats</p>
+            </div> 
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/bwVJtJpV/PV-Shelly-Dorado-2-23.png')">
+                <img src="https://i.postimg.cc/bwVJtJpV/PV-Shelly-Dorado-2-23.png" alt="Image 1">
+                <h3>P 140</h3>
+                <p>Price: 500 xats</p>
+            </div>       
+
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/59GGYctH/C-Users-xrist-Desktop-VANESA-CUMPLE.png')">
+                <img src="https://i.postimg.cc/59GGYctH/C-Users-xrist-Desktop-VANESA-CUMPLE.png" alt="Image 1">
+                <h3>P 141</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/qvCszzrV/PV-Chiko-German.png')">
+                <img src="https://i.postimg.cc/qvCszzrV/PV-Chiko-German.png" alt="Image 1">
+                <h3>P 142</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/2yL83K57/Ray.png')">
+                <img src="https://i.postimg.cc/2yL83K57/Ray.png" alt="Image 1">
+                <h3>P 143</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/X7T9BkPr/Pv-Yeska.png')">
+                <img src="https://i.postimg.cc/X7T9BkPr/Pv-Yeska.png" alt="Image 1">
+                <h3>P 144</h3>
+                <p>Price: 500 xats</p>
+            </div>            
+
+   <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/y6gwDp2k/Pv-Jonatan.png')">
+                <img src="https://i.postimg.cc/y6gwDp2k/Pv-Jonatan.png" alt="Image 1">
+                <h3>P 145</h3>
+                <p>Price: 500 xats</p>
+            </div>              
+
+
+ <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/DfjKxX2Q/Pv-Roselle.png')">
+                <img src="https://i.postimg.cc/DfjKxX2Q/Pv-Roselle.png" alt="Image 1">
+                <h3>P 146</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/vTWVQtf1/WZAPostbzq4t.png')">
+                <img src="https://i.postimg.cc/vTWVQtf1/WZAPostbzq4t.png" alt="Image 1">
+                <h3>P 147</h3>
+                <p>Price: 500 xats</p>
+            </div>   
+
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/R0rTx134/50808852312-a12d87be37-o.png')">
+                <img src="https://i.postimg.cc/R0rTx134/50808852312-a12d87be37-o.png" alt="Image 1">
+                <h3>P 148</h3>
+                <p>Price: 500 xats</p>
+            </div>             
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/Pr9YVgMc/999.png')">
+                <img src="https://i.postimg.cc/Pr9YVgMc/999.png" alt="Image 1">
+                <h3>P 149</h3>
+                <p>Price: 500 xats</p>
+            </div>  
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/BbHdGq15/mecreaate5.png')">
+                <img src="https://i.postimg.cc/BbHdGq15/mecreaate5.png" alt="Image 1">
+                <h3>P 150</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/sfPjPcRK/151.png')">
+                <img src="https://i.postimg.cc/sfPjPcRK/151.png" alt="Image 1">
+                <h3>P 151</h3>
+                <p>Price: 500 xats</p>
+            </div>         
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/L5C5cvv4/Plantilla-Halloween2222.png')">
+                <img src="https://i.postimg.cc/L5C5cvv4/Plantilla-Halloween2222.png" alt="Image 1">
+                <h3>P 152</h3>
+                <p>Price: 500 xats</p>
+            </div>           
+  <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/ryBwrdbP/Plantilla-Halloween-Texturas02.png')">
+                <img src="https://i.postimg.cc/ryBwrdbP/Plantilla-Halloween-Texturas02.png" alt="Image 1">
+                <h3>P 153</h3>
+                <p>Price: 500 xats</p>
+            </div>             
+
+
+<div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/436vNVFm/meowpcb.png')">
+                <img src="https://i.postimg.cc/436vNVFm/meowpcb.png" alt="Image 1">
+                <h3>P 154</h3>
+                <p>Price: 500 xats</p>
+            </div>             
+    
+    
+    
+            <!-- Add more older model images here -->
+        </section>    
+        
+
+    </div>
+
+    <div class="sephiroth-modal" id="sephirothModal">
+        <div class="sephiroth-modal-content">
+            <span class="sephiroth-close-button" onclick="sephirothCloseModal()">&times;</span>
+            <img id="sephirothModalImage">
+        </div>
+    </div>
+
+    <script>
+        var sephirothModal = document.getElementById("sephirothModal");
+        var sephirothModalImg = document.getElementById("sephirothModalImage");
+
+        function sephirothOpenModal(imageUrl) {
+            sephirothModal.style.display = "block";
+            sephirothModalImg.src = imageUrl;
+        }
+
+        function sephirothCloseModal() {
+            sephirothModal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
